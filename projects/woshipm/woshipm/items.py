@@ -8,7 +8,7 @@
 import scrapy
 
 
-class DmozItem(scrapy.Item):
+class WoshipmItem(scrapy.Item):
     title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
+    updateTime = scrapy.Field()
+    reads = scrapy.Field()

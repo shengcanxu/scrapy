@@ -154,10 +154,10 @@ class FilesystemStorageGzipTest(FilesystemStorageTest):
         new_settings.setdefault('HTTPCACHE_GZIP', True)
         return super(FilesystemStorageTest, self)._get_settings(**new_settings)
 
-class LeveldbStorageTest(DefaultStorageTest):
-
-    pytest.importorskip('leveldb')
-    storage_class = 'scrapy.extensions.httpcache.LeveldbCacheStorage'
+# class LeveldbStorageTest(DefaultStorageTest):
+#
+#     pytest.importorskip('leveldb')
+#     storage_class = 'scrapy.extensions.httpcache.LeveldbCacheStorage'
 
 
 class DummyPolicyTest(_BaseTest):
